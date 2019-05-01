@@ -2,4 +2,8 @@
     background-color: blueviolet;
     color: white;
     height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 40px;
 }

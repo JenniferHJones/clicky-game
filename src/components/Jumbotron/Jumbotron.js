@@ -1,4 +1,5 @@
 import React from "react";
+// import "../../../public/background.svg";
 import "./jumbotron.css";
 
 function Jumbotron() {

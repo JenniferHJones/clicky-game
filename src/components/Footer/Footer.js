@@ -4,7 +4,8 @@ import "./footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <span>Clicky Game!</span>
+      <span className="ml-2 mr-2">Clicky Game!</span>
+        <img src="../../public/favicon.ico" className="logo" alt="logo" /> 
     </footer>
   );
 }
