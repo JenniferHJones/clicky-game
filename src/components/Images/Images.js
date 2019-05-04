@@ -3,10 +3,8 @@ import "./images.css";
 
 function Images(props) {
   return (
-    <div className="img-container">
+    <div className="img-container"  onClick={() => props.clickHandler()}>
       <img alt={props.name} src={props.image} />
-      <span className="move" onClick={() => props.handleClick()}>
-      </span>
     </div>
   );
 }

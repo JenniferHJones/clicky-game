@@ -1,5 +1,10 @@
 .jumbotron {
     background-color: black;
-    /* background-image: url("../../../public/background.svg"); */
-    color: white;
+    /* background-image: url(./background.png); */
+    color: red;
+    margin-bottom: 5px;
+}
+
+.title {
+    margin-bottom: 20px;
 }

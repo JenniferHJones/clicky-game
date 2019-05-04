@@ -5,33 +5,46 @@ import Header from "./components/Header/Header";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
 import Images from "./components/Images/Images";
 import Footer from "./components/Footer/Footer";
-import './App.css';
+import "./App.css";
 
-// function App() {
 class App extends React.Component {
   state = {
-    images: images,
+    images,
+    clickedImages: [],
+    highscore: 0,
+    score: 0,
+    totalClick: 0
   };
 
-  handleMove = id => {
-    const filteredImages = this.state.images.filter(i => i.id);
-    this.setState({ images: filteredImages });
-  };
+  handleShuffle(id) {
+    if (!this.state.clickedImages.includes(id)) {
+      this.setState({
+        score: this.state.score + 1,
+        clickedImages: [...this.state.clickedImages, id]
+      });
+    }
+    this.setState({
+      images: images.sort(() => Math.random() - 0.5),
+      totalClick: this.state.totalClick + 1
+    });
+  }
 
   render() {
     return (
       <>
-        
-          <Header />
-          <Jumbotron />
-          <Wrapper>
+        <Header score />
+        <Jumbotron />
+        <Wrapper>
           {this.state.images.map(i => (
             <Images
-            handleClick={() => this.handleMove(i.id)} 
+              key={i.id}
+              name={i.name}
+              image={i.image}
+              clickHandler={() => this.handleShuffle(i.id)}
             />
           ))}
-          </Wrapper>
-          <Footer />
+        </Wrapper>
+        <Footer />
       </>
     );
   }

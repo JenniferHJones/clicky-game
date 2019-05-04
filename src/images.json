@@ -2,61 +2,61 @@
   {
     "id": 1,
     "name": "Alladin",
-    "image": "../public/images/Alladin.jpg"
+    "image": "./images/Alladin.jpg"
   },
   {
     "id": 2,
     "name": "CaptainMarvel",
-    "image": "../public/images/CaptainMarvel.jpg"
+    "image": "./images/CaptainMarvel.jpg"
   },
   {
     "id": 3,
     "name": "Dumbo",
-    "image": "../public/images/Dumbo.jpg"
+    "image": "./images/Dumbo.jpg"
   },
   {
     "id": 4,
     "name": "Endgame",
-    "image": "../public/images/Endgame.jpg"
+    "image": "./images/Endgame.jpg"
   },
   {
     "id": 5,
     "name": "LateNight",
-    "image": "../public/images/LateNight.jpg"
+    "image": "./images/LateNight.jpg"
   },
   {
     "id": 6,
     "name": "LionKing",
-    "image": "../public/images/LionKing.jpg"
+    "image": "./images/LionKing.jpg"
   },
   {
     "id": 7,
     "name": "Maleficent",
-    "image": "../public/images/Maleficent.jpg"
+    "image": "./images/Maleficent.jpg"
   },
   {
     "id": 8,
     "name": "MenInBlack",
-    "image": "../public/images/MenInBlack.jpg"
+    "image": "./images/MenInBlack.jpg"
   },
   {
     "id": 9,
     "name": "Shazam",
-    "image": "../public/images/Shazam.jpg"
+    "image": "./images/Shazam.jpg"
   },
   {
     "id": 10,
     "name": "Spiderman",
-    "image": "../public/images/Spiderman.jpg"
+    "image": "./images/Spiderman.jpg"
   },
   {
     "id": 11,
     "name": "Tolkien",
-    "image": "../public/images/Tolkien.jpg"
+    "image": "./images/Tolkien.jpg"
   },
   {
     "id": 12,
     "name": "X-men",
-    "image": "../public/images/X-men.jpg"
+    "image": "./images/X-men.jpg"
   }
 ]
