@@ -4,13 +4,12 @@ import "./jumbotron.css";
 
 function Jumbotron() {
   return (
-    <div className="jumbotron text-center" style={{borderRadius: 0}} >      
+    <div className="jumbotron text-center" style={{ borderRadius: 0 }}>
       <h1 className="title">Clicky Game!</h1>
       <h4>
-        Click on an image to earn points. Be careful not to click the same image twice. 
+        Click on an image to earn points. Be careful not to click the same image
+        twice.
       </h4>
-      {/* <img src={background} alt="background" /> */}
-
     </div>
   );
 }

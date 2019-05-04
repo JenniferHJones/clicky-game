@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
 import ImageCard from "./components/ImageCard/ImageCard";
 import Footer from "./components/Footer/Footer";
-import "./App.css";
+// import "./App.css";
 
 class App extends React.Component {
   state = {
@@ -14,14 +14,15 @@ class App extends React.Component {
     highScore: 0,
     score: 0,
     totalClick: 0,
-    displayMessage: ""
+    displayMessage: "How good is your memory?"
   };
 
   handleShuffle(id) {
     if (!this.state.clickedImages.includes(id)) {
       this.setState({
         score: this.state.score + 1,
-        displayMessage: this.state.score + 1 === 12 ? "You won!" : "",
+        displayMessage:
+          this.state.score + 1 === 12 ? "You won!" : "How good is your memory?",
         clickedImages: [...this.state.clickedImages, id],
         highScore:
           this.state.score + 1 > this.state.highScore
