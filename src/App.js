@@ -22,7 +22,9 @@ class App extends React.Component {
       this.setState({
         score: this.state.score + 1,
         displayMessage:
-          this.state.score + 1 === 12 ? "You won!" : "How good is your memory?",
+          this.state.score + 1 === 12
+            ? "You won! Play again?"
+            : "How good is your memory?",
         clickedImages: [...this.state.clickedImages, id],
         highScore:
           this.state.score + 1 > this.state.highScore
